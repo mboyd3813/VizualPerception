@@ -1,0 +1,252 @@
+body{
+    font-family: 'Cinzel', serif;
+    font-size: 15px;
+    line-height:1.5;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+/* Global */
+.container{
+    position: sticky;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background: black;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.dark{
+    position: fixed;
+    padding: 15px;
+    background: red;
+    color: black;
+    border: black 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* Slideshow */
+.gallery h1 {
+    margin: 10px 50px;
+}
+
+.gallery img {
+    width: 425px;
+    padding: 5px;
+    filter: grayscale(100%);
+    transition: 1s;
+}
+
+.gallery img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+
+
+/* Header */
+header{
+    position: sticky;
+    background: red;
+    color: black;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: black 3px solid;
+}
+
+header a{
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+
+header li{
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float:left;
+    padding: 15px;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 25px;
+}
+
+header .highlight, header .current a{
+    color: whitesmoke;
+    font-weight: bold;
+    font-style: italic;
+}
+
+header a:hover{
+    color: black;
+    font-weight: bold;
+}
+
+/* Content */
+
+#content {
+    min-height: 400px;
+    background: url('./Vp/VPwatermark.png') no-repeat 0;
+    text-align: center;
+    color: black;
+}
+
+#content h1{
+    margin-top: 425px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#content p{
+    font-size: 20px;
+}
+
+
+/* newsletter */
+#newsletter{
+    position: sticky;
+    padding: 15px;
+    color: black;
+    background: red;
+    border-top: black 1px solid;
+    border-bottom: black 1px solid;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+#newsletter .highlight {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/* services */
+#services{
+    margin-top: 20px;
+}
+
+#services .links{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#services .links img{
+    width: 100px;
+}
+
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+ul#services li img{
+    width: 500px;
+}
+
+/* Sidebar */
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+aside .highlight {
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+/* Main-col */
+article#main-col{
+    float: left;
+    width: 65%;
+    font-size: 12px;
+}
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: red;
+    text-align: center;
+    border-top: black 3px solid;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li
+    #newsletter h1,
+    #newsletter form
+    #services .links,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    header{
+        padding-bottom: 20px;
+    }
+
+    #content h1{
+        margin-top: 40px;
+    }
+    #newsletter button, .quote button{
+        display: block;
+        width: 100%;
+    }
+    #newsletter form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    .services img {
+        width: 100%;
+    }
+
+}
+
