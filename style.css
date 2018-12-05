@@ -1,22 +1,55 @@
 body{
     font-family: 'Cinzel', serif;
-    font-size: 15px;
-    line-height:1.5;
-    padding: 0;
-    margin: 0;
-    background-color: white;
+    background-color:antiquewhite;
 }
 /* Global */
-.container{
-    position: sticky;
-    margin: auto;
-    overflow: hidden;
+
+div.container{
+    width: 350px;
+    height: 55px;
+    margin: 30px auto -20px auto;
+    background: red;
+    background: linear-gradient(whitesmoke red);
+    background: -webkit-linear-gradient(whitesmoke, red);
+    background: -o-linear-gradient(whitesmoke, red);
+    background: -moz-linear-gradient(whitesmoke, red);
+    border-radius: 10px 10px 10px 50px;
+    border-bottom: whitesmoke 3px solid;
+    box-shadow: 5px 5px 10px black;
 }
 
+
+
 ul{
-    margin: 0;
-    padding: 0;
+    margin: -20px auto 60px auto;
 }
+
+p {
+    width: 75%;
+    margin: 15px auto 0px 20px;
+    font-size: 15px;
+    padding: 15px;
+}
+
+h1{
+    margin: 20px auto -25px 80px;
+}
+
+h2{
+    margin: 20px auto -25px 80px;
+    font-size: 23px;
+}
+
+h3{
+    margin: 13px auto 0px 15px;
+    font-size: 15px;
+}
+
+img {
+    height: 500px;
+    margin: 20px auto 20px auto;
+}
+
 
 .button_1{
     height: 38px;
@@ -26,25 +59,44 @@ ul{
     color: white;
 }
 
+.button_1:hover{
+    color: whitesmoke;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
 .dark{
     position: fixed;
-    padding: 15px;
+    margin: auto;
+    width: 300px;
+    font-size: 13px;
+    height: 40px;
     background: red;
-    color: black;
-    border: black 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background: linear-gradient(whitesmoke red);
+    background: -webkit-linear-gradient(whitesmoke, red);
+    background: -o-linear-gradient(whitesmoke, red);
+    background: -moz-linear-gradient(whitesmoke, red);
+    border-radius: 50px 50px 10px 10px;
+    border-bottom: whitesmoke 3px solid;
+    box-shadow: 5px 5px 10px black;
 }
+
+ol {
+    margin: 40px 55px;
+    text-decoration: none
+}
+
 /* Slideshow */
-.gallery h1 {
-    margin: 10px 50px;
+.gallery {
+    margin: 20px auto 10px auto;
 }
 
 .gallery img {
-    width: 425px;
-    padding: 5px;
+    width: 375px;
+    padding: 15px;
     filter: grayscale(100%);
     transition: 1s;
+    margin: 30px auto -20px auto;
 }
 
 .gallery img:hover{
@@ -52,16 +104,42 @@ ul{
     transform: scale(1.1);
 }
 
+div #gallery {
+    width: 350px;
+    height: 55px;
+    margin: 30px auto -20px auto;
+    font-size: 13px;
+    background: red;
+    background: linear-gradient(whitesmoke red);
+    background: -webkit-linear-gradient(whitesmoke, red);
+    background: -o-linear-gradient(whitesmoke, red);
+    background: -moz-linear-gradient(whitesmoke, red);
+    border-radius: 10px 10px 10px 50px;
+    border-bottom: whitesmoke 3px solid;
+    box-shadow: 5px 5px 10px black;
+}
 
+/* Slider */
+#vpCarousel {
+    margin: auto 250px;
+}
 
+.vpvideo{
+    margin: 50px 350px;
+}
 /* Header */
 header{
-    position: sticky;
+    width: 740px;
+    height: 100px;
+    margin: 20px auto 10px auto;
     background: red;
-    color: black;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: black 3px solid;
+    background: linear-gradient(whitesmoke red);
+    background: -webkit-linear-gradient(whitesmoke, red);
+    background: -o-linear-gradient(whitesmoke, red);
+    background: -moz-linear-gradient(whitesmoke, red);
+    border-radius: 10px 50px 10px 10px;
+    border-bottom: whitesmoke 3px solid;
+    box-shadow: 5px 5px 10px black;
 }
 
 header a{
@@ -70,7 +148,6 @@ header a{
     text-transform: uppercase;
     font-size: 16px;
 }
-
 
 header li{
     display: inline;
@@ -100,22 +177,22 @@ header .highlight, header .current a{
 header a:hover{
     color: black;
     font-weight: bold;
+    font-size: medium;
 }
-
 /* Content */
 
-#content {
+/* #content {
     min-height: 400px;
     background: url('./Vp/VPwatermark.png') no-repeat 0;
     text-align: center;
     color: black;
-}
+} */
 
-#content h1{
+/* #content h1{
     margin-top: 425px;
     font-size: 30px;
     margin-bottom: 10px;
-}
+} */
 
 #content p{
     font-size: 20px;
@@ -124,12 +201,17 @@ header a:hover{
 
 /* newsletter */
 #newsletter{
-    position: sticky;
-    padding: 15px;
-    color: black;
+    width: 740px;
+    height: 130px;
+    margin: 20px auto 10px auto;
     background: red;
-    border-top: black 1px solid;
-    border-bottom: black 1px solid;
+    background: linear-gradient(whitesmoke red);
+    background: -webkit-linear-gradient(whitesmoke, red);
+    background: -o-linear-gradient(whitesmoke, red);
+    background: -moz-linear-gradient(whitesmoke, red);
+    border-radius: 10px 10px 10px 50px;
+    border-bottom: whitesmoke 3px solid;
+    box-shadow: 5px 5px 10px black;
 }
 
 #newsletter h1{
@@ -188,30 +270,139 @@ aside#sidebar{
 }
 
 aside#sidebar .quote input, aside#sidebar .quote textarea{
-    width: 90%;
-    padding: 5px;
+    width: 80%;
+    margin: auto auto auto 30px;
 }
 
 aside .highlight {
     color: whitesmoke;
     font-weight: bold;
+    width: 65%;
+    margin: 15px 90px;
 }
 
+button.button_1{
+    width: 150px;
+    font-size: 13px;
+    height: 40px;
+    margin: auto auto auto 80px;
+    background: red;
+    background: linear-gradient(whitesmoke red);
+    background: -webkit-linear-gradient(whitesmoke, red);
+    background: -o-linear-gradient(whitesmoke, red);
+    background: -moz-linear-gradient(whitesmoke, red);
+    border-radius: 10px 10px 50px 50px;
+    border-bottom: whitesmoke 3px solid;
+    box-shadow: 5px 5px 10px black;
+}
 
 /* Main-col */
 article#main-col{
-    float: left;
-    width: 65%;
+    width: 400px;
     font-size: 12px;
+    height: 40px;
+    margin: 35px auto 20px auto;
+    background: red;
+    background: linear-gradient(whitesmoke red);
+    background: -webkit-linear-gradient(whitesmoke, red);
+    background: -o-linear-gradient(whitesmoke, red);
+    background: -moz-linear-gradient(whitesmoke, red);
+    border-radius: 10px 10px 10px 50px;
+    border-bottom: whitesmoke 3px solid;
+    box-shadow: 5px 5px 10px black;
 }
 
-footer{
-    padding: 20px;
-    margin-top: 20px;
-    color: #ffffff;
-    background-color: red;
-    text-align: center;
-    border-top: black 3px solid;
+article#main-photo{
+    width: 400px;
+    font-size: 12px;
+    height: 40px;
+    margin: 35px auto 20px auto;
+    background: red;
+    background: linear-gradient(whitesmoke red);
+    background: -webkit-linear-gradient(whitesmoke, red);
+    background: -o-linear-gradient(whitesmoke, red);
+    background: -moz-linear-gradient(whitesmoke, red);
+    border-radius: 10px 10px 10px 50px;
+    border-bottom: whitesmoke 3px solid;
+    box-shadow: 5px 5px 10px black;
+}
+article#main-video{
+    width: 400px;
+    font-size: 12px;
+    height: 40px;
+    margin: 400px auto 20px auto;
+    background: red;
+    background: linear-gradient(whitesmoke red);
+    background: -webkit-linear-gradient(whitesmoke, red);
+    background: -o-linear-gradient(whitesmoke, red);
+    background: -moz-linear-gradient(whitesmoke, red);
+    border-radius: 10px 50px 10px 10px;
+    border-bottom: whitesmoke 3px solid;
+    box-shadow: 5px 5px 10px black;
+    
+}article#main-graphic{
+    width: 400px;
+    font-size: 12px;
+    height: 40px;
+    margin: 340px auto 20px auto;
+    background: red;
+    background: linear-gradient(whitesmoke red);
+    background: -webkit-linear-gradient(whitesmoke, red);
+    background: -o-linear-gradient(whitesmoke, red);
+    background: -moz-linear-gradient(whitesmoke, red);
+    border-radius: 10px 10px 10px 50px;
+    border-bottom: whitesmoke 3px solid;
+    box-shadow: 5px 5px 10px black;
+    
+}
+
+/* article#main-graphic:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+
+}
+
+article#main-video:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+
+}
+
+article#main-photo:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+
+} */
+
+a {
+    font-size: 12px;
+    margin: 20px auto 0px auto;
+}
+
+footer {
+    width: 500px;
+    height: 65px;
+    margin: 450px auto 10px auto;
+    background: red;
+    background: linear-gradient(whitesmoke red);
+    background: -webkit-linear-gradient(whitesmoke, red);
+    background: -o-linear-gradient(whitesmoke, red);
+    background: -moz-linear-gradient(whitesmoke, red);
+    border-radius: 10px 10px 10px 50px;
+    border-bottom: whitesmoke 3px solid;
+    box-shadow: 5px 5px 10px black;
+}
+
+div.footer h3{
+    width: 55%;
+    margin: 115px;
+    font-size: smaller;
+    padding: 15px
+}
+h1.page-title{
+    width: 80%;
+    margin: 45px auto 20px auto;
+    
 }
 
 /* Media Queries */
@@ -223,7 +414,8 @@ footer{
     #newsletter form
     #services .links,
     article#main-col,
-    aside#sidebar{
+    aside#sidebar
+    section#gallery{
         float: none;
         text-align: center;
         width: 100%;
@@ -235,6 +427,10 @@ footer{
 
     #content h1{
         margin-top: 40px;
+    }
+
+    #content img{
+        width: 100%;
     }
     #newsletter button, .quote button{
         display: block;
