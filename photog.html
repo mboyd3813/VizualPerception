@@ -14,20 +14,51 @@
 <body>
         <header>
                 <div id="branding">
-                 <h1><span class ="highlight">The Plug</span> To All Your Visual Needs!
+                 <h1>
+                    <span class ="highlight">The Plug</span> To All Your Visual Needs!
                  </h1>
             </div>  
-            <nav>
-                    <ul>
-                        <li>
-                            <a href="video.html">Film Gallery</a>
-                        </li>
-                        <li> 
-                            <a href="services.html">BACK</a>
-                        </li>
-                    </ul>
-            </nav>  
-        </header>
+        </header>    
+            <nav class="navbar navbar-expand-md">
+    
+                <button class="navbar-toggler navbar-dark bg-dark" data-toggle="collapse" data-target="#collapse_target">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="collapse_target">
+                <a class="navbar-brand navbar-expand-sm"><img id="logo" src="/Vp/Vizual Perception Stamp.png">Vizual Perception</a>
+                <span class="navbar-text"></span>
+    
+                <ul class="navbar-nav navbar-dark">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="index.html">Home</a>
+                    </li> 
+                    <li class="nav-item">
+                            <a class="nav-link text-dark" href="about.html">About</a>
+                    </li> 
+                    <li class="nav-item">
+                            <a class="nav-link dropdown-toggle text-dark" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services
+                                <span class="caret"></span>
+                            </a>
+                         
+                    <div class="dropdown-menu" aria-labelledby="dropdown-menu2">
+                        <a class="dropdown-item" href="/photog.html">Photography</a>
+                        <a class="dropdown-item" href="/video.html">Video</a>
+                        <a class="dropdown-item">Graphic Design</a>
+                    </div>       
+                    </li>   
+                    <li class="nav-item">
+                            <a class="nav-link text-dark" href="gallery.html">Portfolio</a>
+                    </li>  
+                    <li class="nav-item">
+                            <a class="nav-link text-dark" href="merch.html">Merch</a>
+                    </li>
+    
+                </ul>
+            </div>
+            </nav>
+
+
         <div class="gallery">
                 <div id="gallery">
             <h2>
@@ -35,22 +66,23 @@
             </h2>
                 </div>
         </div>
-        
-    <aside id="sidebar">
-            <div class="dark">
+
+<div class="d-none d-md-block">         
+    <aside id="sidebar2">
+            <div class="dark float-sm-right">
             <h3>
-                <span class="highlight">Get A Quote</span>
+                <span class="highlight">Get A Quote Now!</span>
             </h3>
            <form action="https://formspree.io/mboyd3813@gmail.com" method="POST" class="quote">
-               <div>
+               <div class="form">
                    <label></label><br>
                    <input type="text" name="name" class="name" placeholder="Name">
                </div>
-               <div>
+               <div class="form">
                    <label></label><br>
                    <input type="text" name="email" class="email" placeholder="Email Address">
                </div>
-               <div>
+               <div class="form">
                    <label></label><br>
                    <textarea class="message" name="message" placeholder="Message"></textarea>
                </div>
@@ -60,8 +92,9 @@
                <button class="button_1" type="submit">Send</button>
            </form>
         </aside>
+</div>
 
-        <div id="vpCarousel" class="carousel slide" data-ride="carousel">
+        <div id="vpCarousel-expand-md" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img class="sp1" src="Vp/Pooh1.jpeg" alt="1">

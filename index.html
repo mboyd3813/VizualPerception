@@ -13,29 +13,53 @@
 <body>
     <header>
             <div id="branding">
-             <h1><span class ="highlight">The Plug</span> To All Your Visual Needs!
+             <h1>
+                <span class ="highlight">The Plug</span> To All Your Visual Needs!
              </h1>
         </div>  
-        <nav>
-            <ul>
-                <li class="current">
-                    <a href="index.html">Home</a>
-                <li>
-                    <a href="about.html">About</a>
-                <li>
-                    <a href="services.html">Services</a>       
-                <li>
-                    <a href="gallery.html">Portfolio</a>
-                </li>
-                <li>
-                    <a href="merch.html">Merch</a>
-                </li>        
-            </ul>
-        </nav>
-       </div>    
-    </header>
+    </header>    
+        <nav class="navbar navbar-expand-md">
 
-    <div id="vpCarousel" class="carousel slide" data-ride="carousel">
+            <button class="navbar-toggler navbar-dark bg-dark" data-toggle="collapse" data-target="#collapse_target">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapse_target">
+            <a class="navbar-brand navbar-expand-sm"><img id="logo" src="/Vp/Vizual Perception Stamp.png">Vizual Perception</a>
+            <span class="navbar-text"></span>
+
+            <ul class="navbar-nav navbar-dark">
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="index.html">Home</a>
+                </li> 
+                <li class="nav-item">
+                        <a class="nav-link text-dark" href="about.html">About</a>
+                </li> 
+                <li class="nav-item">
+                        <a class="nav-link dropdown-toggle text-dark" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services
+                            <span class="caret"></span>
+                        </a>
+                     
+                <div class="dropdown-menu" aria-labelledby="dropdown-menu2">
+                    <a class="dropdown-item" href="/photog.html">Photography</a>
+                    <a class="dropdown-item" href="/video.html">Video</a>
+                    <a class="dropdown-item">Graphic Design</a>
+                </div>
+                       
+                </li>   
+                <li class="nav-item">
+                        <a class="nav-link text-dark" href="gallery.html">Portfolio</a>
+                </li>  
+                <li class="nav-item">
+                        <a class="nav-link text-dark" href="merch.html">Merch</a>
+                </li>
+
+            </ul>
+        </div>
+        </nav> 
+
+<div class="d-none d-md-block"> 
+    <div id="vpCarousel" class="carousel slide carousel-fade" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="sp1" src="Vp/Fall Special Slide 1.jpeg" alt="1">
@@ -51,15 +75,16 @@
             </div>
     </div>
     </div> 
+ </div>   
 
-    <footer>
+<footer>
         <div class="footer">
            <h3>
                Vizual Perception LLC, Copyright &copy; 2018
                Designed by Marcus Boyd 
            </h3>
        </div>    
-    </footer>
+</footer>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
