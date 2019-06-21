@@ -436,8 +436,8 @@ article#main-photo:hover{
 } */
 
 a {
-    font-size: 12px;
-    margin: 20px auto 0px auto;
+    font-size: 20px;
+    margin: 20px auto 0 auto;
 }
 
 footer {
