@@ -361,7 +361,7 @@ button.button_1{
 article#main-col{
     width: 400px;
     font-size: 12px;
-    height: 310px;
+    height: auto;
     margin: auto;
     background: red;
     background: linear-gradient(whitesmoke red);
